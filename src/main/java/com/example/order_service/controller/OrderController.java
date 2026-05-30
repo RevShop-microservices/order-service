@@ -36,6 +36,12 @@ public class OrderController {
         return ResponseEntity.ok(service.getOrdersByUser(userId));
     }
 
+    @GetMapping("/check-purchase")
+    @Operation(summary = "Check if user has purchased the product")
+    public ResponseEntity<Boolean> checkPurchase(@RequestParam String productId, @RequestParam Long userId) {
+        return ResponseEntity.ok(service.hasPurchasedProduct(productId, userId));
+    }
+
     @GetMapping("/{orderId}")
     @Operation(summary = "Get order details")
     public ResponseEntity<OrderResponseDTO> getOrderDetails(@PathVariable Long orderId) {
