@@ -25,7 +25,7 @@ The **Order Service** is a Spring Boot microservice responsible for the full lif
 
 | Category | Technology |
 | :--- | :--- |
-| **Core** | Spring Boot 3.3.2, Java 17 |
+| **Core** | Spring Boot 3.3.2, Java 21 |
 | **Data - Relational** | Spring Data JPA, Hibernate, MySQL 8 |
 | **Data - Document** | Spring Data MongoDB |
 | **Payment** | Razorpay Java SDK 1.4.3 |
